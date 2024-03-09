@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+   <style>
+    .mn-cd-div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+    .cards {
+      position: relative;
+      width: calc(92% / 3);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 1%;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: -100%; /* Initially hide the overlay text */
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      box-sizing: border-box;
+      color: #fff;
+      transition: left 0.3s ease; /* Apply transition effect */
+      height: 100%;
+    }
+    .cards:hover .overlay {
+      left: 0; /* Move the overlay text to show on hover */
+      padding-top: 15%;
+    }
+   
+
+  .rolling-text {
+    text-align: center;
+    margin-top: 2%;
+    margin-inline: 5%;
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+  }
+  @media screen and (max-width: 890px){
+    .cards{
+        width: calc(92%/2);
+    }
+    .rolling-text{
+        font-size: 2.5vw; 
+        padding: 2%; 
+    }
+  }
+  @media screen and (max-width: 480px){
+    .cards{
+        width: calc(92%/1);
+        margin-bottom: 1%;
+    }
+    .rolling-text{
+        font-size: 3.5vw; 
+        padding: 2%; 
+        margin-bottom: 1%;
+    }
+  }
+  </style>
+
+  
+  
+  
+</head>
+<body>
+  <h1 style="text-align: center; margin-top: 2%">
+    Active Adventures: Explore the World of Fitness
+  </h1>
+  <p class="rolling-text"
+  >
+    Join Active Adventures and explore the exciting world of fitness!
+    Discover new challenges and push yourself to achieve your goals. Whether
+    it's hiking up mountains or trying out yoga, there's something for
+    everyone. Get stronger, feel better, and have fun along the way. With
+    dedication and effort, you'll see amazing changes in yourself. So come
+    join us on this journey to a healthier, happier you!
+  </p>
+
+
+    <!-- Other card elements here -->
+    <div class="mn-cd-div" style=" padding-top:2%;">
+        <div class="cards">
+          <img src="./Swim.jpg" alt="" />
+          <div class="overlay">
+            <h2>Swimming</h2>
+            <p>
+              Swimming is a great full-body workout that improves cardiovascular
+              health and muscle strength.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./Gym.jpg" alt="" />
+          <div class="overlay">
+            <h2>Gym</h2>
+            <p>
+              Working out at the gym helps in building strength, toning muscles,
+              and improving overall fitness.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./Cycling.jpg" alt="" />
+          <div class="overlay">
+            <h2>Cycling</h2>
+            <p>
+              Cycling is an excellent low-impact exercise that improves
+              cardiovascular health and promotes weight loss.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./Yoga.jpg" alt="" />
+          <div class="overlay">
+            <h2>Yoga</h2>
+            <p>
+              Yoga combines physical postures, breathing exercises, and meditation
+              to enhance overall well-being and flexibility.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./Zumba.jpg" alt="" />
+          <div class="overlay">
+            <h2>Zumba</h2>
+            <p>
+              Zumba is a high-energy fitness class that combines Latin music and
+              dance moves, making exercise fun and enjoyable.
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <img src="./karate.jpg" alt="" />
+          <div class="overlay">
+            <h2>Karate</h2>
+            <p>
+              Karate is a traditional Japanese martial art that focuses on
+              self-defense techniques, discipline, and physical fitness.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
